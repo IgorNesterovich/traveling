@@ -11,8 +11,31 @@ body
     padding: 0 15px;
     margin: 0 auto;
 }
+body
+{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main
+{
+    flex: 1 1 auto;
+}
+.icon
+{
+    display: inline-block;
+    font-size: 24px;
+}
 
 /* header */
+.header
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+}
 .header__container
 {
     display: flex;
@@ -51,7 +74,7 @@ body
 }
 .nav__link:hover
 {
-    color: #FF803C;
+    color: #FF0345;
 }
 
 
@@ -72,14 +95,7 @@ body
 }
 .button:hover
 {
-    box-shadow: -2px -2px 2px 0 #CCC;
-    transform: translate(2px, 2px);
-}
-.button:active,
-.button:focus
-{
-    box-shadow: none;
-    transform: translate(0, 0);
+    box-shadow: 0 0 12px 0 #CD1A40;
 }
 .header__button
 {
@@ -91,7 +107,108 @@ body
 }
 .header__link:hover
 {
-    color: #FF803C;
+    color: #FF0345;
 }
 /* header */
+
+/* top-page */
+.top-page
+{
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), url('../pictures/illustration/header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-top: 210px;
+    padding-bottom: 140px;
+}
+.top-page__content
+{
+    max-width: 580px;
+    color: #FFF;
+}
+
+
+.top-page__suptitle
+{
+    font-family: 'Water Brush', cursive;
+    font-size: 2.875rem;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+.top-page__title
+{
+    font-size: 5.375rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+.top-page__texts
+{
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+.top-page__find
+{
+    display: flex;
+    align-items: center;
+}
+
+
+.top-page__find
+{
+    padding: 15px 22px;
+    border-radius: 28px;
+    position: relative;
+}
+.top-page__find *
+{
+    position: relative;
+}
+.top-page__find::before
+{
+    content: '';
+    position: absolute;
+    height: 96px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 28px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+.find__block
+{
+    display: flex;
+    align-items: center;
+}
+.decore
+{
+    margin-left: 60px;
+    margin-right: 60px;
+    width: 1px;
+    height: 24px;
+    background: #FFF;
+}
+.find__inner
+{
+    margin-left: 15px;
+}
+.find__title
+{
+    line-height: 1.5;
+}
+.find__info
+{
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.top-page-button
+{
+    margin-left: 60px;
+    padding: 23px;
+    margin-left: auto;
+}
+/* top-page */
 

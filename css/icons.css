@@ -1,16 +1,17 @@
 @font-face {
   font-family: 'icons';
-  src:  url('fonts/icons.eot?tqiap2');
-  src:  url('fonts/icons.eot?tqiap2#iefix') format('embedded-opentype'),
-    url('fonts/icons.ttf?tqiap2') format('truetype'),
-    url('fonts/icons.woff?tqiap2') format('woff'),
-    url('fonts/icons.svg?tqiap2#icons') format('svg');
+  src:  url('fonts/icons.eot?p7rz8f');
+  src:  url('fonts/icons.eot?p7rz8f#iefix') format('embedded-opentype'),
+    url('fonts/icons.ttf?p7rz8f') format('truetype'),
+    url('fonts/icons.woff?p7rz8f') format('woff'),
+    url('fonts/icons.svg?p7rz8f#icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
 [class^="ic-"], [class*=" ic-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icons' !important;
   speak: never;
   font-style: normal;
@@ -19,31 +20,29 @@
   text-transform: none;
   line-height: 1;
 
+  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.ic-arrow:before {
+.ic-instagram:before {
   content: "\e900";
 }
-.ic-date:before {
+.ic-facebook:before {
   content: "\e901";
 }
-.ic-facebook:before {
+.ic-twitter:before {
   content: "\e902";
 }
-.ic-find:before {
+.ic-youtube:before {
   content: "\e903";
 }
-.ic-instagram:before {
+.ic-find:before {
   content: "\e904";
 }
-.ic-location:before {
+.ic-date:before {
   content: "\e905";
 }
-.ic-twitter:before {
+.ic-location:before {
   content: "\e906";
-}
-.ic-youtube:before {
-  content: "\e907";
 }
