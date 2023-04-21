@@ -368,8 +368,10 @@ body
 .tour__content
 {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
 }
 .tour__img
 {
@@ -405,6 +407,7 @@ body
 .photos__content
 {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -414,3 +417,64 @@ body
     max-height: 486px;
 }
 /* photos */
+
+/* reviews */
+.reviews__heading
+{
+    margin-bottom: 115px;
+}
+
+
+.reviews__comments
+{
+    max-width: 980px;
+    background: linear-gradient(to right, #CD1A40, #FF803C);
+    color: #FFF;
+    padding: 40px;
+    padding-bottom: 25px;
+    margin: auto;
+    margin-bottom: 45px;
+    border-radius: 6px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.reviews__decore
+{
+    width: 70px;
+    height: auto;
+    position: absolute;
+    top: -40px;
+    left: 40px;
+}
+.reviews__triangle
+{
+    width: 0;
+    height: 0;
+    border-top: 20px solid #FF5643;
+    border-right: 20px solid transparent;
+    position: absolute;
+    right: 40%;
+    bottom: -19.5px;
+    z-index: 0;
+}
+.reviews__authors
+{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+.reviews__author
+{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+.reviews__img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+/* reviews */
