@@ -329,6 +329,7 @@ body
     background-color: #FFF9F0;
     color: #999;
     transition: all .2s linear;
+    cursor: pointer;
 }
 .activity__item:hover 
 {
@@ -400,3 +401,16 @@ body
 }
 /* tour */
 
+/* photos */
+.photos__content
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.photos__img
+{
+    max-width: 380px;
+    max-height: 486px;
+}
+/* photos */
