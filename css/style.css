@@ -419,6 +419,10 @@ body
 /* photos */
 
 /* reviews */
+.reviews__container
+{
+    margin-bottom: 250px;
+}
 .reviews__heading
 {
     margin-bottom: 115px;
@@ -478,3 +482,118 @@ body
     border-radius: 50%;
 }
 /* reviews */
+
+/* newsletter */
+.newsletter
+{
+    background: linear-gradient(to right, #CD1A40, #FF803C);
+    position: relative;
+}
+.newsletter__img
+{
+    position: absolute;
+    max-width: 43vw;
+    max-height: auto;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+}
+.newsletter__box
+{
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    padding-top: 90px;
+    padding-right: 90px;
+    padding-bottom: 90px;
+    color: #FFF;
+}
+.newsletter__title
+{
+    font-size: 2.875rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+.newsletter__text
+{
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+.newsletter__form
+{
+    display: flex;
+    position: relative;
+}
+.newsletter__input
+{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFF;
+    padding: 24px 80px 24px 26px;
+}
+.newsletter__input::placeholder
+{
+    color: #FFF;
+}
+.newsletter__button
+{
+    position: absolute;
+    width: 80px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #FFF;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter__button:hover
+{
+    opacity: 0.75;
+}
+/* newsletter */
+
+/* arrow */
+.arrow
+{
+    cursor: pointer;
+    position: relative;
+    width: 21px;
+    height: 40px;
+}
+.arrow div
+{
+    position: relative;
+    top: 20px;
+    left: 0;
+    width: 18px;
+    height: 3px;
+    background-color: #FF803C;
+    display: block;
+}
+.arrow div::after
+{
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 3px;
+    top: -4px;
+    right: -4px;
+    background: #FF803C;
+    transform: rotate(45deg);
+}
+.arrow div::before
+{
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 3px;
+    top: 4px;
+    right: -4px;
+    background: #FF803C;
+    transform: rotate(-45deg);
+}
+/* arrow */
