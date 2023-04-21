@@ -214,24 +214,26 @@ body
 /* top-page */
 
 /* destination */
-.container__destionation
+.destionation__container
 {
     text-align: center;
 }
 
-.destination__heading
+.heading
 {
+    max-width: 780px;
+    margin: auto;
     margin-top: 75px;
     margin-bottom: 35px;
 }
-.destination__suptitle
+.suptitle
 {
     font-family: 'Water Brush', cursive;
     font-size: 2.875rem;
     line-height: 1.5;
     color: #CD1A40;
 }
-.destination__title
+.title
 {
     font-size: 4rem;
     font-weight: 200;
@@ -305,4 +307,61 @@ body
 
 }
 /* destination */
+
+/* activity */
+.activity__container
+{
+    text-align: center;
+}
+
+
+.activity__content
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.activity__item
+{
+    min-height: 412px;
+    width: calc(100% / 3 - 17px);
+    border-radius: 6px;
+    padding: 55px 35px 35px;
+    background-color: #FFF9F0;
+    color: #999;
+    transition: all .2s linear;
+}
+.activity__item:hover 
+{
+    background: linear-gradient(to right, #CD1A40, #FF803C);
+    color: #FFF;
+    fill: #FFF;
+}
+.icon__inner
+{
+    max-width: 165px;
+    margin-bottom: 40px;
+}
+.icon__svg
+{
+    fill: #999;
+    transition: all .2s linear;
+
+}
+.activity__item:hover .icon__svg
+{
+    fill: #FFF;
+}
+.activity__title
+{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.activity__text
+{
+    line-height: 1.5;
+}
+/* activity */
 
