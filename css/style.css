@@ -643,11 +643,16 @@ body.lock
     justify-content: center;
     gap: 35px;
 }
+.reviews__author-wrap
+{
+    display: flex;
+    align-items: center;
+}
 .reviews__author
 {
+    display: flex;
     width: 80px;
     height: 80px;
-    cursor: pointer;
 }
 .reviews__img
 {
@@ -655,6 +660,16 @@ body.lock
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
+}
+.reviews__desk
+{
+    margin-left: 20px;
+}
+.reviews__desk-author
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 3px;
 }
 
 @media (max-width: 992px)
@@ -665,6 +680,17 @@ body.lock
 }
 }
 /* reviews */
+
+/* tabs */
+.tab__item
+{
+    display: none;
+}
+.tab__item.active
+{
+    display: block;
+}
+/* tabs */
 
 /* newsletter */
 .newsletter

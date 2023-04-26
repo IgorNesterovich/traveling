@@ -24,7 +24,7 @@
 <body>
 
     <!-- header -->
-    <header class="header">
+    <header class="header"> 
         <div class="container header__container">
 
             <div class="header__content">
@@ -381,33 +381,107 @@
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
                 </div>
 
-                <div class="reviews__content">
+                <div class="tab reviews__content">
 
                     <div class="reviews__comments">
                         <img class="reviews__decore" src="pictures/illustration/quotation-marks.png" alt="Quotation marks">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s.....</p>
+                        <div class="tab__item"  id="tab1">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s.....</p>
+                        </div>
+
+                        <div class="tab__item"  id="tab2">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1961s.....</p>
+                        </div>
+
+                        <div class="tab__item"  id="tab3">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, electronic typesetting, remaining essentially unchanged. It was popularised in the 1962s.....</p>
+                        </div>
+
+                        <div class="tab__item"  id="tab4">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1963s.....</p>
+                        </div>
+
+                        <div class="tab__item"  id="tab5">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1964s.....</p>
+                        </div>
+
+                        <div class="tab__item"  id="tab6">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1965s.....</p>
+                        </div>
                         <div class="reviews__triangle"></div>
                     </div>
 
-                    <div class="reviews__authors">
-                        <div class="reviews__author">
-                            <img class="reviews__img" src="pictures/illustration/rev-1.jpg" alt="Author">
+                    <div class="tab__nav reviews__authors">
+                        <div class="reviews__author-wrap">
+                            <button class="tab__nav-btn reviews__author" data-tab="#tab1" data-desk="#desk1">
+                                <img class="reviews__img" src="pictures/illustration/rev-1.jpg" alt="Author">
+                            </button>
+                            <div class="reviews__desk tab__item" id="desk1">
+                                <div class="reviews__desk-author">Nicole Anistone</div>
+                                <div class="reviews__desk-country">USA</div>
+                            </div>
                         </div>
-                        <div class="reviews__author">
-                            <img class="reviews__img" src="pictures/illustration/rev-2.jpg" alt="Author">
+
+                        <div class="reviews__author-wrap">
+                            <button class="tab__nav-btn reviews__author" data-tab="#tab2" data-desk="#desk2">
+                                <img class="reviews__img" src="pictures/illustration/rev-2.jpg" alt="Author">
+                            </button>
+                            <div class="reviews__desk tab__item" id="desk2">
+                                <div class="reviews__desk-author">Maria Thomas</div>
+                                <div class="reviews__desk-country">UK</div>
+                            </div>
                         </div>
-                        <div class="reviews__author">
-                            <img class="reviews__img" src="pictures/illustration/rev-3.jpg" alt="Author">
+
+                        <div class="reviews__author-wrap">
+                            <button class="tab__nav-btn reviews__author" data-tab="#tab3" data-desk="#desk3">
+                                <img class="reviews__img" src="pictures/illustration/rev-3.jpg" alt="Author">
+                            </button>
+                            <div class="reviews__desk tab__item" id="desk3">
+                                <div class="reviews__desk-author">Andora Merkel</div>
+                                <div class="reviews__desk-country">Germany</div>
+                            </div>
                         </div>
-                        <div class="reviews__author">
-                            <img class="reviews__img" src="pictures/illustration/rev-4.jpg" alt="Author">
+
+                        <div class="reviews__author-wrap">
+                            <button class="tab__nav-btn reviews__author" data-tab="#tab4" data-desk="#desk4">
+                                <img class="reviews__img" src="pictures/illustration/rev-4.jpg" alt="Author">
+                            </button>
+                            <div class="reviews__desk tab__item" id="desk4">
+                                <div class="reviews__desk-author">Jacques Revier</div>
+                                <div class="reviews__desk-country">France</div>
+                            </div>
                         </div>
-                        <div class="reviews__author">
-                            <img class="reviews__img" src="pictures/illustration/rev-5.jpg" alt="Author">
+
+                        <div class="reviews__author-wrap">
+                            <button class="tab__nav-btn reviews__author" data-tab="#tab5" data-desk="#desk5">
+                                <img class="reviews__img" src="pictures/illustration/rev-5.jpg" alt="Author">
+                            </button>
+                            <div class="reviews__desk tab__item" id="desk5">
+                                <div class="reviews__desk-author">Antonio Maserati</div>
+                                <div class="reviews__desk-country">Italy</div>
+                            </div>
                         </div>
-                        <div class="reviews__author">
-                            <img class="reviews__img" src="pictures/illustration/rev-6.jpg" alt="Author">
+
+                        <div class="reviews__author-wrap">
+                            <button class="tab__nav-btn reviews__author" data-tab="#tab6" data-desk="#desk6">
+                                <img class="reviews__img" src="pictures/illustration/rev-6.jpg" alt="Author">
+                            </button>
+                            <div class="reviews__desk tab__item" id="desk6">
+                                <div class="reviews__desk-author">Ivan Ivanov</div>
+                                <div class="reviews__desk-country">Russia</div>
+                            </div>
                         </div>
+
+
+
+
+
+
+
+
+
+
+                        
                     </div>
 
                 </div>
